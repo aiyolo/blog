@@ -44,20 +44,14 @@ theme = 'FixIt'
   # 评论系统设置
   [params.page.comment]
     enable = true
-    # giscus 评论系统
-    [params.page.comment.giscus]
+    # utterances 评论系统（基于 GitHub Issues）
+    [params.page.comment.utterances]
       enable = true
       repo = "aiyolo/blog"
-      repoId = "" # 需要获取 GitHub 仓库 ID
-      category = "Announcements"
-      categoryId = "" # 需要获取 GitHub 分类 ID
-      mapping = "pathname"
-      strict = "0"
-      reactionsEnabled = "1"
-      emitMetadata = "0"
-      inputPosition = "bottom"
-      lang = "zh-CN"
-      loading = "lazy"
+      issueTerm = "pathname"
+      label = "comment"
+      theme = "github-light"
+      themeDark = "github-dark"
 
   # 社交链接
   [params.social]
