@@ -1,93 +1,108 @@
 baseURL = 'https://yourusername.github.io/'
 languageCode = 'zh-cn'
 title = '我的博客'
-theme = 'PaperMod'
+theme = 'FixIt'
 
 [params]
-env = "production"
-title = "我的博客"
-description = "一个分享技术、生活和思考的博客"
-keywords = [
-    "博客",
-    "技术",
-    "生活",
-    "思考"
-]
-author = "Your Name"
-images = ["<link or path of image for opengraph, twitter-cards>"]
-DateFormat = "2006-01-02"
-defaultTheme = "auto"
-disableThemeToggle = false
+  # FixIt 主题版本
+  version = "0.3.X"
+  # 网站名称
+  title = "我的博客"
+  # 网站描述
+  description = "一个分享技术、生活和思考的博客"
+  # 网站关键词
+  keywords = ["博客", "技术", "生活", "思考", "Hugo", "FixIt"]
+  # 网站作者
+  [params.author]
+    name = "Your Name"
+    email = "your.email@example.com"
+    link = "https://github.com/aiyolo"
+  # 网站语言
+  languageCode = "zh-cn"
+  defaultContentLanguage = "zh-cn"
 
-ShowReadingTime = true
-ShowShareButtons = true
-ShowPostNavLinks = true
-ShowBreadCrumbs = true
-ShowCodeCopyButtons = false
-ShowWordCount = true
-ShowRssButtonInSectionTermList = true
-UseHugoToc = true
-disableSpecial1stPost = false
-disableScrollToTop = false
-comments = true
-hidemeta = false
-hideSummary = false
-showtoc = false
-tocopen = false
+  # 主题设置
+  [params.theme]
+    # 主题颜色
+    palette = "blue"
+    # 是否显示页面顶部信息
+    headerTitle = "我的博客"
+    # 是否显示页面底部的版权信息
+    footer = "© 2024 - {year} · Powered by Hugo & FixIt"
 
-[params.assets]
-# disableHLJS = true # to disable highlight.js
-# disableFingerprinting = true
-favicon = "<link / abs url>"
-favicon16x16 = "<link / abs url>"
-favicon32x32 = "<link / abs url>"
-apple_touch_icon = "<link / abs url>"
-safari_pinned_tab = "<link / abs url>"
+  # 搜索设置
+  [params.search]
+    enable = true
+    type = "fuse"
+    contentLength = 4000
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
 
-[params.label]
-text = "Home"
-icon = "/apple-touch-icon.png"
-iconHeight = 35
+  # 评论系统设置
+  [params.page.comment]
+    enable = true
+    # giscus 评论系统
+    [params.page.comment.giscus]
+      enable = true
+      repo = "aiyolo/blog"
+      repoId = "" # 需要获取 GitHub 仓库 ID
+      category = "Announcements"
+      categoryId = "" # 需要获取 GitHub 分类 ID
+      mapping = "pathname"
+      strict = "0"
+      reactionsEnabled = "1"
+      emitMetadata = "0"
+      inputPosition = "bottom"
+      lang = "zh-CN"
+      loading = "lazy"
 
-# profile-mode
-[params.profileMode]
-enabled = false # needs to be explicitly set
-title = "ExampleSite"
-subtitle = "This is subtitle"
-imageUrl = "<title image url>"
-imageWidth = 120
-imageHeight = 120
-imageTitle = "my image"
+  # 社交链接
+  [params.social]
+    GitHub = "https://github.com/aiyolo"
+    Twitter = "https://twitter.com/yourusername"
+    Email = "your.email@example.com"
 
-[[params.profileMode.buttons]]
-name = "Posts"
-url = "posts"
+  # 网站图标
+  [params.image]
+    favicon = "/favicon.ico"
+    appleTouchIcon = "/apple-touch-icon.png"
 
-[[params.profileMode.buttons]]
-name = "Tags"
-url = "tags"
+# 菜单配置
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 1
 
-# home-info mode
-[params.homeInfoParams]
-Title = "你好 👋"
-Content = "欢迎来到我的博客，这里分享技术、生活和思考。"
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 2
 
-[[params.socialIcons]]
-name = "twitter"
-url = "https://twitter.com/"
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 3
 
-[[params.socialIcons]]
-name = "stackoverflow"
-url = "https://stackoverflow.com"
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 4
 
-[[params.socialIcons]]
-name = "github"
-url = "https://github.com/"
+# 分类和标签设置
+[taxonomies]
+  category = "categories"
+  tag = "tags"
 
-# utterances comments
-[params.utterances]
-repo = "aiyolo/blog"    # GitHub 仓库地址
-issueTerm = "pathname"
-label = "comment"
-theme = "github-light"
-themeDark = "github-dark"
+# 网站地图
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
