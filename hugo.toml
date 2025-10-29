@@ -1,4 +1,4 @@
-baseURL = 'https://yourusername.github.io/'
+baseURL = 'https://aiyolo.github.io/blog/'
 languageCode = 'zh-cn'
 title = '我的博客'
 theme = 'FixIt'

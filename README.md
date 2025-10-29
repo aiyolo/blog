@@ -1,128 +1,100 @@
 # 我的博客
 
-这是一个使用 [Hugo](https://gohugo.io/) 和 [PaperMod](https://github.com/adityatelange/hugo-PaperMod) 主题构建的个人博客。
+一个基于 Hugo 和 FixIt 主题的个人博客，支持 GitHub 登录评论功能。
+
+## 🚀 特性
+
+- **🎨 现代化设计** - 使用 FixIt v0.4.0-alpha 主题
+- **📱 响应式布局** - 完美适配移动端和桌面端
+- **🔍 强大搜索** - 基于 Fuse.js 的全文搜索
+- **💬 评论系统** - 支持 GitHub 账号登录 (giscus)
+- **🌙 主题切换** - 支持深色/浅色主题
+- **📝 Markdown 支持** - 完整的 Markdown 语法支持
+- **🏷️ 分类标签** - 灵活的内容分类系统
+- **⚡ 快速加载** - Hugo 的高速构建能力
+
+## 🛠️ 技术栈
+
+- **框架**: Hugo v0.151.2+
+- **主题**: FixIt v0.4.0-alpha
+- **评论**: giscus (基于 GitHub Discussions)
+- **部署**: GitHub Pages
+
+## 📂 项目结构
+
+```
+blog/
+├── content/              # 博客内容
+│   ├── posts/           # 博客文章
+│   └── about.md         # 关于页面
+├── themes/FixIt/        # FixIt 主题 (Git 子模块)
+├── hugo.toml            # Hugo 配置文件
+├── static/              # 静态资源
+└── public/              # 生成的网站文件
+```
 
 ## 🚀 快速开始
 
 ### 本地开发
 
-1. 克隆仓库
-   ```bash
-   git clone --recursive https://github.com/yourusername/yourusername.github.io.git
-   cd yourusername.github.io
-   ```
+```bash
+# 克隆仓库
+git clone https://github.com/aiyolo/blog.git
+cd blog
 
-2. 安装 Hugo
-   ```bash
-   # macOS
-   brew install hugo
+# 启动开发服务器
+hugo server --bind 0.0.0.0 --port 1313 --buildDrafts
 
-   # 其他平台请参考: https://gohugo.io/installation/
-   ```
-
-3. 启动本地服务器
-   ```bash
-   hugo server
-   ```
-
-   访问 http://localhost:1313 查看博客
+# 访问网站
+# http://localhost:1313
+```
 
 ### 创建新文章
 
 ```bash
-hugo new content posts/my-new-post.md
+# 创建新文章
+hugo new posts/my-new-post.md
+
+# 编辑文章内容
+# 确保文章的 front matter 中包含:
+# comments: true
 ```
 
-### 部署
+### 构建和部署
 
-推送到 `main` 分支会自动触发 GitHub Actions 部署到 GitHub Pages。
+```bash
+# 构建静态网站
+hugo --minify
 
-## 📝 目录结构
-
-```
-my-blog/
-├── content/           # 内容文件
-│   ├── posts/        # 博客文章
-│   └── about.md      # 关于页面
-├── static/           # 静态资源
-├── themes/           # 主题
-├── .github/          # GitHub Actions
-├── hugo.toml         # Hugo 配置文件
-└── README.md         # 说明文件
+# 提交更改
+git add .
+git commit -m "更新博客内容"
+git push origin main
 ```
 
-## ⚙️ 配置
+## 📝 评论系统
 
-主要配置在 `hugo.toml` 文件中：
+本博客使用 [giscus](https://giscus.app/) 评论系统，支持：
 
-- `baseURL`: 你的 GitHub Pages 地址
-- `title`: 博客标题
-- `theme`: 使用主题
-- `params`: 主题参数
+- ✅ GitHub 账号登录
+- ✅ Markdown 评论
+- ✅ 表情符号支持
+- ✅ 匿名评论
+- ✅ 评论回复和点赞
 
-## 🎨 主题自定义
+## 🌐 在线访问
 
-当前使用 [PaperMod](https://github.com/adityatelange/hugo-PaperMod) 主题，支持：
-
-- 🌙 暗黑/明亮模式切换
-- 📱 响应式设计
-- 🔍 搜索功能
-- 📝 多种页面布局
-- 🏷️ 标签和分类
-- 📊 阅读时间统计
-
-详细配置请参考 [PaperMod 文档](https://adityatelange.github.io/hugo-PaperMod/)
-
-## 📝 写作指南
-
-### Front Matter
-
-每篇文章都需要包含 front matter：
-
-```toml
-+++
-title = "文章标题"
-date = 2025-10-25T23:00:00+08:00
-description = "文章描述"
-tags = ["标签1", "标签2"]
-categories = ["分类"]
-draft = false  # 设为 true 则不会发布
-+++
-
-文章内容...
-```
-
-### 推荐工具
-
-- **写作**: Typora, VS Code
-- **图片**: PicGo (图床上传)
-- **语法检查**: markdownlint
-
-## 🚀 部署到其他平台
-
-### Netlify
-
-1. 连接 GitHub 仓库
-2. 构建命令: `hugo`
-3. 发布目录: `public`
-
-### Vercel
-
-1. 导入项目
-2. 框架预设: Other
-3. 构建命令: `hugo`
-4. 输出目录: `public`
-
-## 📚 学习资源
-
-- [Hugo 官方文档](https://gohugo.io/documentation/)
-- [PaperMod 主题文档](https://adityatelange.github.io/hugo-PaperMod/)
-- [Markdown 语法指南](https://www.markdownguide.org/basic-syntax/)
-
-## 🤝 贡献
-
-欢迎提交 Issue 和 Pull Request！
+- **博客地址**: https://aiyolo.github.io/blog
+- **GitHub 仓库**: https://github.com/aiyolo/blog
 
 ## 📄 许可证
 
-MIT License
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request 来改进这个博客！
+
+---
+
+**使用 [FixIt](https://github.com/hugo-fixit/FixIt) 主题构建** 💙
