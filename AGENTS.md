@@ -101,6 +101,49 @@ git push origin main
 - ⏳ GitHub 仓库创建和推送（待完成）
 - ⏳ GitHub Pages 部署配置（待完成）
 
+## 行为准则
+
+### 🔒 重要约束
+
+**严禁修改任何 submodule 文件！**
+
+- ❌ 绝对不能修改 `themes/` 目录下的任何主题文件
+- ❌ 不能修改 submodule 中的模板、样式或配置文件
+- ❌ 不能更改第三方主题的源代码
+
+### ✅ 允许的操作
+
+- ✅ 修改 Hugo 配置文件 (`hugo.toml`)
+- ✅ 创建和编辑内容文件 (`content/` 目录)
+- ✅ 修改本地布局文件 (`layouts/` 目录)
+- ✅ 添加静态资源 (`static/` 目录)
+- ✅ 通过配置文件自定义主题设置
+
+### 🛠️ 主题配置方法
+
+如果需要自定义主题行为，请使用以下方法：
+
+1. **通过 Hugo 配置文件** - 在 `hugo.toml` 中修改主题参数
+2. **创建本地布局覆盖** - 在 `layouts/` 目录创建文件覆盖主题布局
+3. **添加自定义CSS/JS** - 在 `static/` 目录添加样式和脚本
+4. **选择兼容的主题版本** - 使用与 Hugo 版本兼容的主题
+
+### 📝 具体案例
+
+**错误做法**：
+```bash
+# 禁止这样做
+vim themes/FixIt/layouts/_markup/render-passthrough.html
+```
+
+**正确做法**：
+```bash
+# 推荐这样做
+layouts/_markup/render-passthrough.html  # 创建本地覆盖
+# 或者
+hugo.toml  # 通过配置文件修改
+```
+
 ## 下一步计划
 1. 创建 GitHub 仓库 `aiyolo/my-blog`
 2. 推送代码到 GitHub
