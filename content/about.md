@@ -2,6 +2,7 @@
 title = "关于我"
 date = 2025-10-25T23:00:00+08:00
 draft = false
+comments = true
 +++
 
 ## 你好！👋

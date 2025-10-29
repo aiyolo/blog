@@ -7,6 +7,7 @@ tags = ["博客", "介绍", "开始"]
 categories = ["生活"]
 series = []
 draft = false
+comments = true
 +++
 
 ## 欢迎来到我的博客！
