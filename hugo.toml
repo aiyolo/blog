@@ -86,7 +86,7 @@ url = "https://github.com/"
 
 # utterances comments
 [params.utterances]
-repo = "yourusername/your-repo"    # 替换为你的 GitHub 仓库
+repo = "aiyolo/blog"    # GitHub 仓库地址
 issueTerm = "pathname"
 label = "comment"
 theme = "github-light"

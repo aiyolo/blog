@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.gatsbyjs.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(hugo:*)",
+      "Bash(brew install:*)",
+      "Bash(git init:*)",
+      "Bash(git submodule add:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
