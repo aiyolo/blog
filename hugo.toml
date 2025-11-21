@@ -14,7 +14,7 @@ theme = 'FixIt'
   keywords = ["博客", "技术", "生活", "思考", "Hugo", "FixIt"]
   # 网站作者
   [params.author]
-    name = "Your Name"
+    name = "aiyolo"
     email = "your.email@example.com"
     link = "https://github.com/aiyolo"
   # 网站语言
