@@ -309,7 +309,7 @@ git push origin main
 - **项目维护者**: aiyolo
 - **GitHub**: https://github.com/aiyolo
 - **博客**: https://aiyolo.github.io/blog
-- **邮箱**: your.email@example.com
+- **邮箱**: aiyolo@example.com
 
 ---
 
