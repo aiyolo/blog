@@ -15,7 +15,7 @@ theme = 'FixIt'
   # 网站作者
   [params.author]
     name = "aiyolo"
-    email = "your.email@example.com"
+    email = "aiyolo@example.com"
     link = "https://github.com/aiyolo"
   # 网站语言
   languageCode = "zh-cn"
@@ -56,8 +56,8 @@ theme = 'FixIt'
   # 社交链接
   [params.social]
     GitHub = "https://github.com/aiyolo"
-    Twitter = "https://twitter.com/yourusername"
-    Email = "your.email@example.com"
+    Twitter = "https://twitter.com/aiyolo"
+    Email = "aiyolo@example.com"
 
   # 网站图标
   [params.image]

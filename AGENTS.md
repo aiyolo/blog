@@ -89,8 +89,8 @@ theme = 'FixIt'
   description = "一个分享技术、生活和思考的博客"
   
   [params.author]
-    name = "Your Name"
-    email = "your.email@example.com"
+    name = "aiyolo"
+    email = "aiyolo@example.com"
     link = "https://github.com/aiyolo"
 
   # 评论系统配置

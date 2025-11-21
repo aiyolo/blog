@@ -29,9 +29,9 @@ comments = true
 
 如果你想与我交流，可以通过以下方式联系我：
 
-- 📧 Email: your.email@example.com
-- 🐙 GitHub: [yourusername](https://github.com/yourusername)
-- 🐦 Twitter: [@yourusername](https://twitter.com/yourusername)
+- 📧 Email: aiyolo@example.com
+- 🐙 GitHub: [aiyolo](https://github.com/aiyolo)
+- 🐦 Twitter: [@aiyolo](https://twitter.com/aiyolo)
 
 ### 博客初衷
 

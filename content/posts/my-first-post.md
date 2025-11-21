@@ -1,5 +1,5 @@
 +++
-author = "Your Name"
+author = "aiyolo"
 title = "我的第一篇博客"
 date = 2025-10-25T23:00:00+08:00
 description = "欢迎来到我的博客！这是我的第一篇文章，介绍一下这个博客的初衷和未来的内容规划。"

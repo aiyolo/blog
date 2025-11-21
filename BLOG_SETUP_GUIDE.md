@@ -66,12 +66,12 @@ theme = 'FixIt'
 1. **作者信息必须是对象格式**（重要！）
 ```toml
 # ❌ 错误格式
-author = "Your Name"
+author = "aiyolo"
 
 # ✅ 正确格式
 [params.author]
-  name = "Your Name"
-  email = "your.email@example.com"
+  name = "aiyolo"
+  email = "aiyolo@example.com"
   link = "https://github.com/aiyolo"
 ```
 
@@ -257,7 +257,7 @@ comments: true
 2. **博客文章** (`content/posts/my-first-post.md`)
 ```markdown
 ---
-author: "Your Name"
+author: "aiyolo"
 title: "我的第一篇博客"
 date: 2025-10-25T23:00:00+08:00
 description: "欢迎来到我的博客！"
@@ -285,8 +285,8 @@ theme = 'FixIt'
   description = "一个分享技术、生活和思考的博客"
   
   [params.author]
-    name = "Your Name"
-    email = "your.email@example.com"
+    name = "aiyolo"
+    email = "aiyolo@example.com"
     link = "https://github.com/aiyolo"
 
   # 评论系统
